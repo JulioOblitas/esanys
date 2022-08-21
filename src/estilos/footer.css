@@ -1,0 +1,135 @@
+.contenedorpie{
+
+    margin-top: 615px;
+    height: 280px;    
+    background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);
+    
+    display: flex;
+    flex-direction: row;
+    width: 1349px;        
+       
+    }
+
+    .contenedorpie2{
+      margin-top: -47px;     
+      background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);      
+  
+      }
+
+     h6 {
+      
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+     } 
+     p  {
+      color: white;
+      font-weight: bold;
+    }
+
+    .colortexto {
+      color: white;
+      font-weight: bold;
+    }
+    .contenedorcontactos{
+      color: white;          
+      width:  400px;           
+      justify-content: space-around;
+      flex-direction: row;                
+      flex-flow:wrap;
+      display: flex;
+
+      align-items: center;
+   }
+   
+ 
+ 
+  
+    .itemcontacto{
+      
+      height: 50px;
+      width: 400px;  
+      
+      font-weight: bold;
+      
+      display: flex;
+      line-height: 50px;
+      align-self: center;
+      justify-content: center;
+    }
+
+
+    .item{
+      height: 50px;
+      width: 60px;
+      padding:  15px;
+      
+    }
+
+    
+    .item2{
+      padding:  15px;
+      width: 340px;
+      height: 50px;
+      
+      align-self: center;
+      
+    }
+
+    
+    .imglogopie{
+        height: 50px;
+        width:150px; 
+        margin-left:5px;       
+        margin-top: 20px;
+        /*background-size: contain;*/
+        /*object-fit: cover; */
+    }
+    .imglogoredes {
+        height: 40px;
+        width: 40px;
+       
+     }
+     
+     .imglogocontactodireccion{
+        
+        height: 30px;
+        width: 30px;
+       
+     }
+
+     .imglogocontactotelefono{
+        
+        height: 30px;
+        width: 30px;
+       
+     }
+     .imglogocontactoemail{
+        height: 30px;
+        width: 30px;
+       
+     }
+    
+      .contenedorredessociales{
+        background-color: aqua;
+        color: white;
+        width:  400px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction:row;                
+        flex-flow:wrap;        
+    }
+        .itemredessociales{
+        padding:  15px;
+        height: 50px;
+        width: 400px;  
+        font-size: 30px;      
+        font-weight: bold;
+      }
+
+      .itemimgredsoc{
+        height: 50px;
+        width: 400px;
+        padding:  15px;
+        
+      }

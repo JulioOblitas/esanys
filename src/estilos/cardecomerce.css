@@ -1,0 +1,74 @@
+ .principal{
+    height: 100%;
+    width: 100%;
+    /* trabaja en 2 dimensiones */
+    display: grid;
+    /* cuantas columnas quiero, explicito*/
+    grid-template-columns: repeat(4, 1fr);
+    /* No se exactamente cuantas filas tendre, implicito */
+    grid-auto-rows: 400px;
+    padding: 10px;
+    /* separación entre elementos de grid */
+    gap: 10px;
+    margin-top: 60px;    
+   /* background-image: radial-gradient(circle at 26.15% 45.8%, #ff7f18 0, #ff6b1d 16.67%, #fc4d1c 33.33%, #ee1919 50%, #df0019 66.67%, #d3001e 83.33%, #cc0026 100%);*/
+   /*background-color: rgb(183, 123, 179);*/
+   background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);      
+    flex-wrap: wrap;
+    z-index:1028;
+}
+
+.tarjeta {
+    z-index:1027;
+}
+.contenedor-producto {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;    
+    height: 100%;    
+}
+.divbtncantidad{
+    margin-top: -85px;
+    margin-left: 220px;
+    z-index: 1050;
+}
+.btnanadircantcarrito{
+    height: 30px;
+    background-color: rgb(0, 119, 255);
+    width: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 12px;
+    border-radius: 5px;    
+    
+}
+
+.btneliminarcantcarrito{
+    height: 30px;
+    background-color:red;
+    width: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 12px;
+    border-radius: 5px;        
+    margin-left: 5px;
+}
+
+.adicrow{
+    background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);      
+    margin-top: 68px;    
+    height: 1697px;
+    max-width: 1800px;
+    
+   
+
+}
+
+.cardtexto{
+    font-weight: bold;
+    color: rgb(0, 157, 255);
+
+}

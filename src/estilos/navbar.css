@@ -1,0 +1,42 @@
+
+.navbar {
+    
+    background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);
+
+  }
+ 
+  .navbar-light .navbar-nav .nav-link {
+  color: rgb(243, 243, 245);
+}
+
+
+  
+
+
+
+.navbar-light .navbar-toggler-icon {
+  background-color: aliceblue;
+}
+
+.txtbuscar{
+ width: 250px;
+ 
+}
+.btn-buscar {
+  width: 60px;
+ 
+}
+
+.contenedorbuscar{
+
+background-color: aqua;
+margin-right: 80px;
+}
+
+
+
+.btn-opciones {
+  width: 100px;
+
+}
+

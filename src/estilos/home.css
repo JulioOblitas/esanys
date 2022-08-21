@@ -1,0 +1,7 @@
+.fondo {
+    
+    background-color: radial-gradient(135deg, rgb(0, 64, 168) 1%, rgb(0, 11, 168) 30%, rgba(10,198,255,1) 69%, rgba(170,230,253,1) 100%);
+    width: 1200px;
+    height: 1200px;    
+    border-radius: 0%;
+}

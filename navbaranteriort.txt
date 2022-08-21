@@ -1,0 +1,56 @@
+  <Navbar  bg="light" expand="md" className="navbar mb-2" fixed="top" >
+      <Container fluid>
+        <Navbar.Brand href="#" style={{ color: "white"  }} >ESANYS</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Nav.Link href="#action1" style={{ color: "white"  }}>INICIO</Nav.Link>        
+            
+            <NavDropdown title="CATEGORIAS" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">ESCALERAS</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">ANDAMIOS</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">IMPLEMENTOS DE SEGURIDAD</NavDropdown.Item>
+              <NavDropdown.Item href="#action5">SUMIN. DE CONSTRUCCION</NavDropdown.Item>
+            </NavDropdown>
+            
+          </Nav>
+
+          
+          <Form className="d-flex me-2">
+            <FormControl
+          
+              type="search"
+              placeholder="buscar en esanys"
+              className="me-2"
+              aria-label="Search"              
+            />
+            <Button variant="primary" style={{ width: "80px"  }} className="me-2" >BUSCAR </Button>
+            
+           
+             
+            </Form>
+          
+            {/*<Button variant="primary" className="d-inline me-2 btn-buscar" >BUSCAR</Button>*/ }           
+            {/*<Button variant="primary" className="d-inline me-2" >LOGIN </Button>  */}
+            {/*<Button variant="danger"  className="d-inline me-2" >CONTACTO </Button> */}
+            
+            
+            <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>
+            
+            
+            
+         
+         
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
