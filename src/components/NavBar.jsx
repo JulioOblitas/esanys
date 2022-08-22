@@ -1,11 +1,20 @@
-
-
+import Swal from 'sweetalert2'
 import { Navbar, Container, Nav,   NavDropdown, Button, Form } from "react-bootstrap";  
 import { NavLink, Link,  Route, Routes } from "react-router-dom";
 import CardsEC from "./CardsEC"
 import "../estilos/navbar.css"
 
 export default function NavBar() {
+
+  const Mensaje   =  () =>{
+        
+    Swal.fire(
+      'ESANYS',
+      'CONTACTO : HILDA SURICHAQUI -> 996 824 484',        
+      'success'      
+    )
+  
+}
 
     return (
       <>
@@ -49,7 +58,7 @@ export default function NavBar() {
           </Form>
           </Nav>
           <Nav>
-            <Button variant="danger" className="me-4" >CONTACTO</Button>
+            <Button variant="danger" className="me-4" onClick={() => {Mensaje()}} >CONTACTO</Button>
             <Button variant="primary" className="me-4" >LOGIN</Button>
           </Nav>
           
