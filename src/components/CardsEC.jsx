@@ -1,6 +1,6 @@
 
 import Card from 'react-bootstrap/Card';
-
+import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom';
 
 import "../estilos/cardecomerce.css";
@@ -8,14 +8,16 @@ import "../estilos/cardecomerce.css";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Footer2 from './Footer2'
-export default function CardsEC() {
-  const productos =
+export default function CardsEC({ productos , alquiler }) {
+
+  console.log(alquiler)
+ /* const productos =
         [{        
             id : 1,
             nombre : 'ESCALERA SIMPLE AL',
             imagen:"/assets/imagenes/escaleratijera_aluminio.jpg",
             precio: 30.00,
-            tipoproducto: 'ESCALERA DOBLE AL',
+            tipoproducto: 'ESCALERAS',
             tipoproducto_id: '1',
             unimed:'UNIDAD',
             unimed_id: 1 
@@ -28,9 +30,9 @@ export default function CardsEC() {
           imagen:"/assets/imagenes/escalera-tijera-doble-aluminio.jpg",          
           precio: 30.00,
           tipoproducto: 'ESCALERAS',
-          tipoproducto_id: 3,
+          tipoproducto_id: 1,
           unimed:'UNIDAD',
-          unimed_id: 3 
+          unimed_id: 1 
           
         },
         {        
@@ -39,9 +41,9 @@ export default function CardsEC() {
           imagen:"/assets/imagenes/escalera.jpg",
           precio: 30.00,
           tipoproducto: 'ESCALERAS',
-          tipoproducto_id: 2,
+          tipoproducto_id: 1,
           unimed:'UNIDAD',
-          unimed_id: 2 
+          unimed_id: 1 
           
       },
       {        
@@ -50,9 +52,9 @@ export default function CardsEC() {
         imagen:"/assets/imagenes/escaleradobleaccesoFV.jpg",        
         precio: 30.00,
         tipoproducto: 'ESCALERAS',
-        tipoproducto_id: 3,
+        tipoproducto_id: 1,
         unimed:'UNIDAD',
-        unimed_id: 3 
+        unimed_id: 1 
         
     },
     {        
@@ -61,9 +63,9 @@ export default function CardsEC() {
       imagen:"/assets/imagenes/escalera-telescopicaFV.jpg",      
       precio: 30.00,
       tipoproducto: 'ESCALERAS',
-      tipoproducto_id: 3,
+      tipoproducto_id: 1,
       unimed:'UNIDAD',
-      unimed_id: 3 
+      unimed_id: 1 
       
   },
   {        
@@ -72,9 +74,9 @@ export default function CardsEC() {
     imagen:"/assets/imagenes/escaleratelescopicaaluminio.png",
     precio: 30.00,
     tipoproducto: 'ESCALERAS',
-    tipoproducto_id: 3,
+    tipoproducto_id: 1,
     unimed:'UNIDAD',
-    unimed_id: 3 
+    unimed_id: 1 
     
 },
 {        
@@ -82,10 +84,10 @@ export default function CardsEC() {
   nombre : 'ESCALERA EMBONABLE FV',
   imagen:"/assets/imagenes/escaleraembonable.jpg",
   precio: 30.00,
-  tipoproducto: 'E',
-  tipoproducto_id: 3,
+  tipoproducto: 'ESCALERAS',
+  tipoproducto_id: 1,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 },
 {        
@@ -94,9 +96,9 @@ export default function CardsEC() {
   imagen:"/assets/imagenes/escalera-banqueta-aluminio.jpg",
   precio: 30.00,
   tipoproducto: 'ESCALERAS',
-  tipoproducto_id: 3,
+  tipoproducto_id: 1,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 },
 {        
@@ -105,9 +107,9 @@ export default function CardsEC() {
   imagen:"/assets/imagenes/escaleraacero3pasos.jpg",
   precio: 30.00,
   tipoproducto: 'ESCALERAS',
-  tipoproducto_id: 3,
+  tipoproducto_id: 1,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 }, 
 {        
@@ -115,10 +117,10 @@ export default function CardsEC() {
   nombre : 'ANDAMIO ACROW',
   imagen:"/assets/imagenes/Andamios-Multidireccionales.jpg",
   precio: 30.00,
-  tipoproducto: 'ESCALERAS',
-  tipoproducto_id: 3,
+  tipoproducto: 'ANDAMIOS',
+  tipoproducto_id: 2,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 }, 
 {        
@@ -126,10 +128,10 @@ export default function CardsEC() {
   nombre : 'ANDAMIO CONVENCIONAL',
   imagen:"/assets/imagenes/Andamios-Convencional.jpg",
   precio: 30.00,
-  tipoproducto: 'ESCALERAS',
-  tipoproducto_id: 3,
+  tipoproducto: 'ANDAMIOS',
+  tipoproducto_id: 2,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 },
 {        
@@ -137,10 +139,10 @@ export default function CardsEC() {
   nombre : 'PUNTALES',
   imagen:"/assets/imagenes/puntal.png",
   precio: 30.00,
-  tipoproducto: 'PUNTALES',
+  tipoproducto: 'SUMINISTROS CONSTRUCCION',
   tipoproducto_id: 3,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 },
 {        
@@ -148,10 +150,10 @@ export default function CardsEC() {
   nombre : 'TROMPO METALICO',
   imagen:"/assets/imagenes/trompometalico.png",
   precio: 30.00,
-  tipoproducto: 'PUNTALES',
+  tipoproducto: 'SUMINISTROS CONSTRUCCION',
   tipoproducto_id: 3,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 },
 
@@ -160,10 +162,10 @@ export default function CardsEC() {
   nombre : 'ARNES + LINEA DE VIDA',
   imagen:"/assets/imagenes/arnes.jpg",
   precio: 30.00,
-  tipoproducto: 'ESCALERAS',
-  tipoproducto_id: 3,
+  tipoproducto: 'IMPLEMENTOS SEGURIDAD',
+  tipoproducto_id: 4,
   unimed:'UNIDAD',
-  unimed_id: 3 
+  unimed_id: 1 
   
 },
 {        
@@ -188,7 +190,16 @@ export default function CardsEC() {
   unimed_id: 3 
   
 }
-]
+]*/
+const Mensaje   =  () =>{
+        
+  Swal.fire(
+    'ESANYS',
+    'CONTACTO : HILDA SURICHAQUI -> 996 824 484',        
+    'success'      
+  )
+
+}
 
     return (
     <Container fluid="md"   className="adicrow"  >
@@ -199,15 +210,25 @@ export default function CardsEC() {
           
         
         <Card key={prod.id * 2} className='card mb-2'  style={{ width: '20rem', height:'20.1rem', marginTop: '1rem', marginLeft:'0.4rem'    }}>
-        <Link key={prod.id * 1}    to={`/detalleproducto/${prod.id}` } >          
-       <Card.Img key={prod.id*3} style={{ height:'15.1rem' }}  src={prod.imagen} alt =""  />
+        {/*<Link key={prod.id * 1}    to={`/detalleproducto/${prod.id}` } >          */}
+        <Link key={prod.id * 1}  onClick={(e) => {Mensaje()}}  to={`/` } >   
+         <Card.Img key={prod.id*3} style={{ height:'15.1rem' }}  src={prod.imagen} alt =""  />
        
        <Card.Body  key={prod.id*4} className="tarjeta">
          <Card.Title key={prod.id*5}>{prod.nombre}</Card.Title>
-         <Card.Text key={prod.id*6} className='cardtexto'>
-          S/ {prod.precio.toFixed(2)}
 
-         </Card.Text> 
+         {alquiler
+        ? <Card.Text key={prod.id*6} className='cardtexto'>
+            Alquiler + Serv. Logistico  S/ {prod.precio.toFixed(2)}
+          </Card.Text> 
+        : 
+          <Card.Text key={prod.id*6} className='cardtexto'>
+            S/ {prod.precio.toFixed(2)}
+            </Card.Text> 
+        }
+         
+
+         
          
        </Card.Body>
        

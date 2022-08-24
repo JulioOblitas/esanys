@@ -26,16 +26,16 @@ const imgFacebook = "/assets/imagenes/facebook.png"
               <p>
               <img  className='imglogocontactodireccion me-4'  src= {imgDireccion}  alt=""/>                  
                                 
-              Av los Sauces 380 Surquillo - Lima - Peru
+              Calle San Fernando Surquillo - Lima 
               </p>
               <p>
                 
                 <img  className='imglogocontactotelefono me-4'  src= {imgTelefono}  alt=""/>                
-                934586160 / 999616327 
+                996 824 484 / 954 451 473
               </p>
               <p>
               <img  className='imglogocontactoemail me-4'  src= {imgEmail}  alt=""/>
-                contigocliente@esanys.pe
+              ventas.esanysinversiones@gmail.com
               </p>
               
             </MDBCol>
