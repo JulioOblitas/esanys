@@ -4,8 +4,11 @@ import { Navbar, Container, Nav,   NavDropdown, Button, Form } from "react-boots
 import { NavLink, Link,  Route, Routes } from "react-router-dom";
 import CardsEC from "./CardsEC"
 import "../estilos/navbar.css"
-
+import Cotizacion from "../views/Cotizacion"
 export default function NavBar() {
+
+  
+
   const [productos, setProductos] = useState(
     [{        
         id : 1,
@@ -186,14 +189,15 @@ unimed_id: 3
 
 }
 ]); 
+const [modalShow, setModalShow] = useState(false);  
 const [productosori, setProductosori] = useState(productos)        
 const [alquiler, setAlquiler] = useState(false)        
   
 const Mensaje   =  () =>{
-        
+    {/*setModalShow(true)*/}
     Swal.fire(
       'ESANYS',
-      'CONTACTO : HILDA SURICHAQUI -> 996 824 484',        
+      'Email: ventas@esanys.pe => 996 824 484 => HILDA SURICHAQUI',            
       'success'      
     )
   
@@ -290,6 +294,10 @@ const Filtro   =  (e, cat, tipo) =>{
           </Nav>
           <Nav>
             <Button variant="danger" className="me-4" onClick={() => {Mensaje()}} >CONTACTO</Button>
+
+            
+         {/*  <Cotizacion show={modalShow} onHide={() => setModalShow(false)} />*}
+    
           {/*  <Button variant="primary" className="me-4" >LOGIN</Button>*/}
           </Nav>
           

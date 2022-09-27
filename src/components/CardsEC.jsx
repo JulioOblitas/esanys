@@ -195,7 +195,7 @@ const Mensaje   =  () =>{
         
   Swal.fire(
     'ESANYS',
-    'CONTACTO : HILDA SURICHAQUI -> 996 824 484',        
+    'Email: ventas@esanys.pe => 996 824 484 => HILDA SURICHAQUI',            
     'success'      
   )
 
@@ -209,21 +209,21 @@ const Mensaje   =  () =>{
          productos.map((prod,i) =>(
           
         
-        <Card key={prod.id * 2} className='card mb-2'  style={{ width: '20rem', height:'20.1rem', marginTop: '1rem', marginLeft:'0.4rem'    }}>
+        <Card key={prod.id * 2} className='card mb-2'  style={{ width: '20rem', height:'25.8rem', marginTop: '1rem', marginLeft:'0.4rem'    }}>
         {/*<Link key={prod.id * 1}    to={`/detalleproducto/${prod.id}` } >          */}
         <Link key={prod.id * 1}  onClick={(e) => {Mensaje()}}  to={`/` } >   
-         <Card.Img key={prod.id*3} style={{ height:'15.1rem' }}  src={prod.imagen} alt =""  />
+         <Card.Img key={prod.id*3} style={{ height:'22.5rem' }}  src={prod.imagen} alt =""  />
        
        <Card.Body  key={prod.id*4} className="tarjeta">
          <Card.Title key={prod.id*5}>{prod.nombre}</Card.Title>
 
          {alquiler
         ? <Card.Text key={prod.id*6} className='cardtexto'>
-            Alquiler + Serv. Logistico  S/ {prod.precio.toFixed(2)}
+            Alquiler + Serv. Logistico   {/* S/ {prod.precio.toFixed(2)}*/}
           </Card.Text> 
         : 
           <Card.Text key={prod.id*6} className='cardtexto'>
-            S/ {prod.precio.toFixed(2)}
+            {/*S/ {prod.precio.toFixed(2)}*/}
             </Card.Text> 
         }
          
