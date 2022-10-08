@@ -195,7 +195,7 @@ const Mensaje   =  () =>{
         
   Swal.fire(
     'ESANYS',
-    'Email: ventas@esanys.pe => 996 824 484 => HILDA SURICHAQUI',            
+    'Email: ventas@esanys.pe => 954 451 473 => HILDA SURICHAQUI',            
     'success'      
   )
 
@@ -209,7 +209,7 @@ const Mensaje   =  () =>{
          productos.map((prod,i) =>(
           
         
-        <Card key={prod.id * 2} className='card mb-2'  style={{ width: '20rem', height:'25.8rem', marginTop: '1rem', marginLeft:'0.4rem'    }}>
+        <Card key={prod.id * 2} className='card mb-2'  style={{ width: '20.1rem', height:'27.8rem', marginTop: '0.5rem', marginLeft:'0.4rem'    }}>
         {/*<Link key={prod.id * 1}    to={`/detalleproducto/${prod.id}` } >          */}
         <Link key={prod.id * 1}  onClick={(e) => {Mensaje()}}  to={`/` } >   
          <Card.Img key={prod.id*3} style={{ height:'22.5rem' }}  src={prod.imagen} alt =""  />

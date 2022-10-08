@@ -8,7 +8,13 @@
   .navbar-light .navbar-nav .nav-link {
   color: rgb(243, 243, 245);
 }
+.titulo {
 
+  color: #fffafa !important;
+  font-weight:bolder;
+  font-size: 28px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
   
 

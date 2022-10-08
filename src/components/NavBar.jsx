@@ -4,10 +4,52 @@ import { Navbar, Container, Nav,   NavDropdown, Button, Form } from "react-boots
 import { NavLink, Link,  Route, Routes } from "react-router-dom";
 import CardsEC from "./CardsEC"
 import "../estilos/navbar.css"
-import Cotizacion from "../views/Cotizacion"
-export default function NavBar() {
+import {Slideshow, Slide, TextoSlide} from './Slideshow'
+import '../estilos/slider.css'
+import styled from 'styled-components';
 
-  
+export default function NavBar() {
+  const  img1 = 'assets/imagenes/principalslider.jpg'
+  const  img2 = 'assets/imagenes/escalerasslider.jpg'
+  const  img3 = 'assets/imagenes/andamiosslider3.jpg'
+  const  img4 = 'assets/imagenes/puntalesslider.jpg'
+  const images = [
+		{
+			id: '1',
+			title: 'SUMINISTROS DE CONSTRUCCION',      
+			image:"/assets/imagenes/puntalesslider.jpg",	
+			image2:
+				'https://cdn.pixabay.com/photo/2020/11/09/15/12/trail-5726987_960_720.jpg',
+		},
+		{
+			id: '2',
+			title: 'IMPLEMENTOS DE SEGURIDAD',
+      image:"/assets/imagenes/arnesslider.jpg",	
+			image2:
+				'https://cdn.pixabay.com/photo/2011/09/27/18/52/bird-9950_960_720.jpg',
+		},
+		{
+			id: '3',
+			title: 'SOMOS IMPORTADORES Y COMERCIALIZADORES',
+      image:"/assets/imagenes/principalslider.jpg",	
+			image2:
+				'https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_960_720.jpg',
+		},
+		{
+			id: '4',
+			title: 'ESCALERAS',
+      image:"/assets/imagenes/escalerasslider.jpg",
+			image2:
+				'https://cdn.pixabay.com/photo/2016/11/21/17/44/arches-national-park-1846759_960_720.jpg',
+		},
+		{
+			id: '5',
+			title: 'ANDAMIOS',
+      image:"/assets/imagenes/andamiosslider1.jpg",
+			image2:
+				'https://cdn.pixabay.com/photo/2018/10/26/22/55/harley-davidson-3775527_960_720.jpg',
+		},
+	]
 
   const [productos, setProductos] = useState(
     [{        
@@ -68,7 +110,7 @@ export default function NavBar() {
 },
 {        
 id : 6,
-nombre : 'ESCALERA TELESCOPIC. AL ',
+nombre : 'ESCALERA TELESCOPIC. AL',
 imagen:"/assets/imagenes/escaleratelescopicaaluminio.png",
 precio: 30.00,
 tipoproducto: 'ESCALERAS',
@@ -197,7 +239,7 @@ const Mensaje   =  () =>{
     {/*setModalShow(true)*/}
     Swal.fire(
       'ESANYS',
-      'Email: ventas@esanys.pe => 996 824 484 => HILDA SURICHAQUI',            
+      'Email: ventas@esanys.pe => 954 451 473  => HILDA SURICHAQUI',            
       'success'      
     )
   
@@ -251,7 +293,7 @@ const Filtro   =  (e, cat, tipo) =>{
     <Navbar   bg="light" expand="md" className="navbar mb-2" fixed="top">
       
       <Container fluid>
-      <Navbar.Brand href="#" style={{ color: "white"  }} >ESANYS</Navbar.Brand>
+      <Navbar.Brand  className='titulo'  >ESANYS</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -305,12 +347,51 @@ const Filtro   =  (e, cat, tipo) =>{
       </Container>
       
     </Navbar>
-    
+    <main  >
+			
+			{/*<Titulo>Productos Destacados</Titulo>*/}
+			<Slideshow controles={true} autoplay={true} velocidad="3000" intervalo="3000">
+				<Slide>
+				{/*	<a href="https://www.falconmaters.com">*/}
+					{/*</a>*/}
+          	<img style={{ height:'55.5rem' }} src={img1} alt=""/>
+					
+					<TextoSlide colorFondo="navy">
+						<p className='tituloslider'>BIENVENIDOS A ESANYS</p>
+					</TextoSlide>
+				</Slide>
+				<Slide>
+					
+						<img style={{ height:'55.5rem' }} src={img2} alt=""/>
+					
+					<TextoSlide>
+						<p className='tituloslider' >ESCALERAS</p>
+					</TextoSlide>
+				</Slide>
+        <Slide>
+					
+						<img style={{ height:'55.5rem' }} src={img3} alt=""/>
+					
+					<TextoSlide>
+						<p className='tituloslider' >ANDAMIOS</p>
+					</TextoSlide>
+				</Slide>
+        <Slide>
+					
+						<img style={{ height:'55.5rem' }} src={img4} alt=""/>
+					
+					<TextoSlide>
+						<p className='tituloslider'>PUNTALES</p>
+					</TextoSlide>
+				</Slide>
+			</Slideshow>
+		</main>
+
     <Routes>
      
      <Route  path = "/" element = { <CardsEC  productos={productos} alquiler= {alquiler}/>} />
      
-   </Routes>
+  </Routes>
     
     
     </>   
@@ -318,3 +399,10 @@ const Filtro   =  (e, cat, tipo) =>{
    )
   
 }
+
+const Titulo = styled.p`
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+`;

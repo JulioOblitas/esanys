@@ -8,6 +8,7 @@ const imgWatssapp = "/assets/imagenes/watssapp3.png"
 const imgEmail   =   "/assets/imagenes/email.png"
 const imgTelefono = "/assets/imagenes/watssapp.png"
 const imgFacebook = "/assets/imagenes/facebook.png"
+const imgTicTok = "/assets/imagenes/tictok.png"
 
  function Footer2 ()  {
   return (
@@ -26,35 +27,35 @@ const imgFacebook = "/assets/imagenes/facebook.png"
               <p>
               <img  className='imglogocontactodireccion me-4'  src= {imgDireccion}  alt=""/>                  
                                 
-              Calle San Fernando Surquillo - Lima 
+              Cal. San Fernando Mz B Lt 04 Surquillo
               </p>
               <p>
                 
                 <img  className='imglogocontactotelefono me-4'  src= {imgTelefono}  alt=""/>                
-                996 824 484 / 954 451 473
+                 954 451 473
               </p>
               <p>
               <img  className='imglogocontactoemail me-4'  src= {imgEmail}  alt=""/>
-              ventas.esanysinversiones@gmail.com
+              ventas@esanys.pe
               </p>
               
             </MDBCol>
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>REDES SOCIALES</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='https://www.facebook.com/Escalerasyandamiosenalquiler' className='text-reset'>
                   
                   <img  className='imglogoredes'  src= {imgFacebook}  alt=""/>
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='https://www.instagram.com/esanys2021/' className='text-reset'>
                 <img  className='imglogoredes'  src= {imgInstagram}  alt=""/>     
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                <img  className='imglogoredes'  src= {imgWatssapp}  alt=""/>     
+                <a href='https://www.tiktok.com/@esanys' className='text-reset'>
+                <img  className='imglogoredes'  src= {imgTicTok}  alt=""/>     
                 </a>
               </p>
               
