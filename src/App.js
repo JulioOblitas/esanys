@@ -9,6 +9,7 @@ import NavBar from './components/NavBar'
 /*import Footer2 from './components/Footer2'*/
 import Home from './components/Home'
 
+
 function App() {
   
   return (
@@ -17,12 +18,12 @@ function App() {
       <Router>                        
           <NavBar/>   
           
-          <Routes>
+         {/* <Routes>
               <Route  path="/home" element={<Home />} />  
-          </Routes>
-    
+  </Routes>*/}
+          
       </Router>
-    
+   
   </>
   );
 }

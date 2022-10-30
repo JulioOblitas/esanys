@@ -7,6 +7,7 @@ import "../estilos/navbar.css"
 import {Slideshow, Slide, TextoSlide} from './Slideshow'
 import '../estilos/slider.css'
 import styled from 'styled-components';
+import Footer2 from "./Footer2";
 
 export default function NavBar() {
   const  img1 = 'assets/imagenes/principalslider.jpg'
@@ -317,8 +318,8 @@ const Filtro   =  (e, cat, tipo) =>{
               
               
             </NavDropdown>
-          
-         
+            
+            <Nav.Link variant='success' className='titulocontacto me-auto' onClick={(e) => {Mensaje(e)}}> CONTACTO</Nav.Link>
           </Nav>
           <Nav className="mx-auto">   
          {/*
@@ -335,8 +336,8 @@ const Filtro   =  (e, cat, tipo) =>{
     </Form>*/}
           </Nav>
           <Nav>
-            <Button variant="danger" className="me-4" onClick={() => {Mensaje()}} >CONTACTO</Button>
-
+            
+            
             
          {/*  <Cotizacion show={modalShow} onHide={() => setModalShow(false)} />*}
     
@@ -392,12 +393,15 @@ const Filtro   =  (e, cat, tipo) =>{
      <Route  path = "/" element = { <CardsEC  productos={productos} alquiler= {alquiler}/>} />
      
   </Routes>
-    
-    
-    </>   
-    
-   )
   
+    
+       
+
+
+    </> 
+       
+   ) 
+
 }
 
 const Titulo = styled.p`

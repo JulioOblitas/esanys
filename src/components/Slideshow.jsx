@@ -124,8 +124,10 @@ const Slide = styled.div`
 	}
 `;
 
+/*background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0,0,0,.3)'};*/
 const TextoSlide = styled.div`
-	background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0,0,0,.3)'};
+	
+	background: ${props => props.colorFondo ? props.colorFondo : 'blue'};
 	color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
 	width: 100%;
 	padding: 10px 60px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import "../estilos/footer.css";
-import {  MDBFooter, MDBContainer,  MDBCol, MDBRow} from 'mdb-react-ui-kit';
+import {  MDBFooter, MDBContainer,  MDBCol, MDBRow, MDBIcon} from 'mdb-react-ui-kit';
 
 const imgDireccion = "/assets/imagenes/direccion.png"
 const imgInstagram = "/assets/imagenes/instagram.png"
@@ -14,32 +14,34 @@ const imgTicTok = "/assets/imagenes/tictok.png"
   return (
       <>
       
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted contenedorpie2'>
+    <MDBFooter bgColor='light' className='text-md-start text-muted contenedorpie2'>
       
 
-      <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
+      
+        <MDBContainer className='text-md-start mt-5'>
           <MDBRow className='mt-3'>
            
-          <MDBCol md="4" lg="3" xl="4" className='mx-auto mb-md-0 mb-4'>
+          <MDBCol md="2" lg="2" xl="4" className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contacto</h6>
-                            
+              
               <p>
-              <img  className='imglogocontactodireccion me-4'  src= {imgDireccion}  alt=""/>                  
-                                
-              Cal. San Fernando Mz B Lt 04 Surquillo
+              <img  className='imglogocontactodireccion me-4'  src= {imgDireccion}  alt=""/>                                                  
+                cl. San Fernando MzB Lt04 Surquillo
               </p>
               <p>
-                
+
                 <img  className='imglogocontactotelefono me-4'  src= {imgTelefono}  alt=""/>                
-                 954 451 473
-              </p>
-              <p>
+                954 451 473 
+                </p>
+                
+                <p>
               <img  className='imglogocontactoemail me-4'  src= {imgEmail}  alt=""/>
               ventas@esanys.pe
               </p>
-              
             </MDBCol>
+            
+
+            
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>REDES SOCIALES</h6>
               <p>
@@ -65,7 +67,7 @@ const imgTicTok = "/assets/imagenes/tictok.png"
             
           </MDBRow>
         </MDBContainer>
-      </section>
+      
 
       <div className='text-center p-4  colortexto' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2022 Copyright:  
