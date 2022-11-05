@@ -56,7 +56,7 @@ margin-right: 80px;
 
 .anchotextomodal{
   margin-left: 15px;
-  width: 350px;
+  width: 320px;
   text-transform:uppercase;
 }
 .labelmodal{
@@ -68,7 +68,7 @@ margin-right: 80px;
   font-weight: bold;;
 }
 .modal-dialog{
-  width: 380px;
+  width: 340px;
 }
 input:focus,textarea:focus {
   border:3px;
