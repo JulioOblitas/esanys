@@ -1,5 +1,6 @@
+
 import Swal from 'sweetalert2'
-import { useState, useEffect } from 'react'; 
+import { useState, useRef  } from 'react'; 
 import { Navbar, Container, Nav,   NavDropdown, Button, Form } from "react-bootstrap";  
 import { NavLink, Link,  Route, Routes } from "react-router-dom";
 import CardsEC from "./CardsEC"
@@ -7,9 +8,59 @@ import "../estilos/navbar.css"
 import {Slideshow, Slide, TextoSlide} from './Slideshow'
 import '../estilos/slider.css'
 import styled from 'styled-components';
-import Footer2 from "./Footer2";
+import emailjs from '@emailjs/browser';
+import Modal from 'react-bootstrap/Modal';
 
 export default function NavBar() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
+  const form = useRef()  
+  
+  
+    // console.log(e)
+    // console.log(e.target.id)
+    // console.log(e.target.value)
+  
+    const [datos, setDatos] = useState({
+      user_name: "",
+      user_email:"",
+      user_telefono: "",
+      user_message:""      
+    });
+  
+    const actualizarInput = (e) => {
+      // console.log(e)
+      // console.log(e.target.id)
+      // console.log(e.target.value)
+      setDatos((prevalue) => ({...prevalue, [e.target.id]: e.target.value}))
+    }
+  
+    const sendEmail = (e) => {
+  
+    e.preventDefault();
+    console.log(datos);
+    if(datos.user_telefono =="" || datos.user_name =="" || datos.user_email =="" || datos.user_message  == "" ){
+      Swal.fire(
+        'ESANYS',
+        'Complete datos',            
+        'success'      
+      )
+          
+      return;
+    }
+    
+    setShow(false);
+    emailjs.sendForm('service_hho51qc','template_z0tspus',form.current,'QMDs7SfLWkWgYzlJD')
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+    setDatos({user_name: "",
+    user_email:"",
+    user_telefono: "",
+    user_message:""})
+  }
+  
   const  img1 = 'assets/imagenes/principalslider.jpg'
   const  img2 = 'assets/imagenes/escalerasslider.jpg'
   const  img3 = 'assets/imagenes/andamiosslider3.jpg'
@@ -319,7 +370,34 @@ const Filtro   =  (e, cat, tipo) =>{
               
             </NavDropdown>
             
-            <Nav.Link variant='success' className='titulocontacto me-auto' onClick={(e) => {Mensaje(e)}}> CONTACTO</Nav.Link>
+            {/*<Nav.Link variant='success' className='titulocontacto me-auto' onClick={(e) => {Mensaje(e)}}> CONTACTO</Nav.Link>*/}
+        <Nav.Link variant='success' className='titulocontacto me-auto' onClick={handleShow}> CONTACTO</Nav.Link>
+            <Modal className='modaldialog' show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>ESANYS - CONTACTO</Modal.Title>
+        </Modal.Header>
+          
+          <form ref={form} onSubmit={sendEmail} >                
+            <label  className='labelmodal' htmlFor="">NOMBRES</label>
+            <input className='anchotextomodal' onChange={actualizarInput}   name='user_name'  id ='user_name' type="text" />
+            <label className='labelmodal'htmlFor="">EMAIL</label>
+            <input type="email" className='anchotextomodal' onChange={actualizarInput}  name='user_email' id ='user_email'  />
+            <label className='labelmodal'  htmlFor="">TELEFONO</label>
+            <input className='anchotextomodal' onChange={actualizarInput}  name='user_telefono'  id = "user_telefono" type="text" />
+            <label className='labelmodal' htmlFor="">ASUNTO</label>
+            <textarea   className='anchotextomodal'   onChange={actualizarInput} name="user_message" id="user_message" cols="30" rows="10"></textarea>
+         
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                CERRAR
+              </Button>
+              <Button variant="primary" onClick={(event) => {sendEmail(event)}}>
+                ENVIAR
+              </Button>
+          
+            </Modal.Footer>
+        </form>
+      </Modal>
           </Nav>
           <Nav className="mx-auto">   
          {/*

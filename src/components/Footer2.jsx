@@ -1,6 +1,6 @@
 import React from 'react';
 import "../estilos/footer.css";
-import {  MDBFooter, MDBContainer,  MDBCol, MDBRow, MDBIcon} from 'mdb-react-ui-kit';
+import {  MDBFooter, MDBContainer,  MDBCol, MDBRow } from 'mdb-react-ui-kit';
 
 const imgDireccion = "/assets/imagenes/direccion.png"
 const imgInstagram = "/assets/imagenes/instagram.png"
@@ -26,7 +26,11 @@ const imgTicTok = "/assets/imagenes/tictok.png"
               
               <p>
               <img  className='imglogocontactodireccion me-4'  src= {imgDireccion}  alt=""/>                                                  
-                cl. San Fernando MzB Lt04 Surquillo
+                cl. San Fernando MzB Lt04 
+                
+              </p>
+              <p className='titulodistrito'>
+                          Surquillo
               </p>
               <p>
 
