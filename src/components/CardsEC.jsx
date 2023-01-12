@@ -195,7 +195,7 @@ const Mensaje   =  () =>{
         
   Swal.fire(
     'ESANYS',
-    'Email: ventas@esanys.pe => 954 451 473 => HILDA SURICHAQUI',            
+    'Email: ventas@esanys.pe => 954 451 473',            
     'success'      
   )
 
