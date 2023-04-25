@@ -2,8 +2,8 @@
 
     margin-top: 615px;
     height: 280px;    
-    background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);
-    
+    /*background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);*/
+    background-color: #171440 !important;
     display: flex;
     flex-direction: row;
     width: 1349px;        
@@ -13,8 +13,8 @@
     .contenedorpie2{
       
     margin-top: 50px;
-      background-image: radial-gradient(circle at 26.15% 45.8%, #060eef 0, #040beb 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);      
-  
+      /*background-image: radial-gradient(circle at 26.15% 45.8%, #060eef 0, #040beb 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);      */
+      background-color: #171440 !important;
       }
 
      h6 {
