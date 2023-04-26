@@ -106,7 +106,7 @@ export default function NavBar() {
   const [productos, setProductos] = useState(
     [{        
         id : 1,
-        nombre : 'ESCALERA SIMPLE AL',
+        nombre : 'ESCALERA TIJERA 05 PASOS DE ALUMINIO DE SIMPLE ACCESO',
         imagen:"/assets/imagenes/escaleratijera_aluminio.jpg",
         precio: 30.00,
         tipoproducto: 'ESCALERAS',
@@ -118,7 +118,7 @@ export default function NavBar() {
     
     {        
       id : 2,
-      nombre : 'ESCALERA DOBLE AL',
+      nombre : 'ESCALERA TIJERA 08 PASOS DE ALUMINIO DE DOBLE ACCESO',
       imagen:"/assets/imagenes/escalera-tijera-doble-aluminio.jpg",          
       precio: 30.00,
       tipoproducto: 'ESCALERAS',
@@ -129,7 +129,7 @@ export default function NavBar() {
     },
     {        
       id : 3,
-      nombre : 'ESCALERA SIMPLE FV',          
+      nombre : 'ESCALERA TIJERA DE 06 PASOS DE FIBRA DE VIDRIO DE SIMPLE ACCESO',          
       imagen:"/assets/imagenes/escalera.jpg",
       precio: 30.00,
       tipoproducto: 'ESCALERAS',
@@ -140,7 +140,7 @@ export default function NavBar() {
   },
   {        
     id : 4,
-    nombre : 'ESCALERA DOBLE FV',
+    nombre : 'ESCALERA TIJERA DE 06 PASOS DE FIBRA DE VIDRIO DE DOBLE ACCESO',
     imagen:"/assets/imagenes/escaleradobleaccesoFV.jpg",        
     precio: 30.00,
     tipoproducto: 'ESCALERAS',

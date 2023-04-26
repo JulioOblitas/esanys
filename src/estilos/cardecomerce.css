@@ -21,6 +21,7 @@
 
 .tarjeta {
     z-index:1027;
+    
 }
 .contenedor-producto {
     display: flex;
@@ -70,9 +71,13 @@
    
 
 }
-
+.card-title{
+    font-size: 1.1rem !important;
+    color:   #161665b3;
+    font-weight: bold;
+}
 .cardtexto{
     font-weight: bold;
-    color:   #1266f1
-  
+    
+   
 }

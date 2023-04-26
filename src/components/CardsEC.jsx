@@ -1,20 +1,18 @@
-
-import Card from 'react-bootstrap/Card';
-import Swal from 'sweetalert2'
-import { Link } from 'react-router-dom';
+import Card from "react-bootstrap/Card";
+import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 import "../estilos/cardecomerce.css";
 /*import Col from 'react-bootstrap/Col';*/
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Footer2 from './Footer2'
-export default function CardsEC({ productos , alquiler }) {
-
-  console.log(alquiler)
- /* const productos =
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Footer2 from "./Footer2";
+export default function CardsEC({ productos, alquiler }) {
+  console.log(alquiler);
+  /* const productos =
         [{        
             id : 1,
-            nombre : 'ESCALERA SIMPLE AL',
+            nombre : 'LE AL',
             imagen:"/assets/imagenes/escaleratijera_aluminio.jpg",
             precio: 30.00,
             tipoproducto: 'ESCALERAS',
@@ -191,73 +189,64 @@ export default function CardsEC({ productos , alquiler }) {
   
 }
 ]*/
-const Mensaje   =  () =>{
-        
-  Swal.fire(
-    'ESANYS',
-    'Email: ventas@esanys.pe => 954 451 473',            
-    'success'      
-  )
+  const Mensaje = () => {
+    Swal.fire("ESANYS", "Email: ventas@esanys.pe => 954 451 473", "success");
+  };
 
-}
+  return (
+    <Container fluid="md" className="adicrow">
+      <Row xs={1} md={4} className="g-2">
+        {productos.map((prod, i) => (
+          <Card
+            key={prod.id * 2}
+            className="card mb-2"
+            style={{
+              width: "20.3rem",
+              height: "27.8rem",
+              marginTop: "0.5rem",
+              marginLeft: "0.4rem",
+            }}
+          >
+            {/*<Link key={prod.id * 1}    to={`/detalleproducto/${prod.id}` } >          */}
+            <Link
+              key={prod.id * 1}
+              onClick={(e) => {
+                Mensaje();
+              }}
+              to={`/`}
+            >
+              <Card.Img
+                key={prod.id * 3}
+                style={{ height: "22.5rem" }}
+                src={prod.imagen}
+                alt=""
+              />
 
-    return (
-    <Container fluid="md"   className="adicrow"  >
-     <Row xs={1} md={4} className="g-2">
-      
-      {
-         productos.map((prod,i) =>(
-          
-        
-        <Card key={prod.id * 2} className='card mb-2'  style={{ width: '20.3rem', height:'27.8rem', marginTop: '0.5rem', marginLeft:'0.4rem'    }}>
-        {/*<Link key={prod.id * 1}    to={`/detalleproducto/${prod.id}` } >          */}
-        <Link key={prod.id * 1}  onClick={(e) => {Mensaje()}}  to={`/` } >   
-         <Card.Img key={prod.id*3} style={{ height:'22.5rem' }}  src={prod.imagen} alt =""  />
-       
-       <Card.Body  key={prod.id*4} className="tarjeta">
-         <Card.Title key={prod.id*5}>{prod.nombre}</Card.Title>
+              <Card.Body key={prod.id * 4} className="tarjeta">
+                <Card.Title key={prod.id * 5}>{prod.nombre}</Card.Title>
 
-         {alquiler
-        ? <Card.Text key={prod.id*6} className='cardtexto'>
-            Alquiler + Serv. Logistico   {/* S/ {prod.precio.toFixed(2)}*/}
-          </Card.Text> 
-        : 
-          <Card.Text key={prod.id*6} className='cardtexto'>
-            {/*S/ {prod.precio.toFixed(2)}*/}
-            </Card.Text> 
-        }
-         
+                {alquiler ? (
+                  <Card.Text key={prod.id * 6} className="cardtexto">
+                    Alquiler + Serv. Logistico{" "}
+                    {/* S/ {prod.precio.toFixed(2)}*/}
+                  </Card.Text>
+                ) : (
+                  <Card.Text key={prod.id * 6} className="cardtexto">
+                    {/*S/ {prod.precio.toFixed(2)}*/}
+                  </Card.Text>
+                )}
+              </Card.Body>
 
-         
-         
-       </Card.Body>
-       
-        {/*<div className='divbtncantidad'>
+              {/*<div className='divbtncantidad'>
           <button className='btnanadircantcarrito'  key={prod.id*7} id = {prod.id}  onClick={(e) => {Alert('HOLA1')}} >+</button>
           <button className='btneliminarcantcarrito'  key={prod.id*8} id = {prod.id}  onClick={(e) => {Alert('HOLA1')}} > -</button>
-         </div>     */    }
-
-</Link>   
-     </Card>
-     
-      
-            
-          
-        
-        
-        
-      ))
-       
-      }
-      
+         </div>     */}
+            </Link>
+          </Card>
+        ))}
       </Row>
-         
-      <Footer2/> 
-      </Container>
-      
-      
-            );
 
-
+      <Footer2 />
+    </Container>
+  );
 }
-
