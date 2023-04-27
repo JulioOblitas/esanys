@@ -151,7 +151,7 @@ export default function NavBar() {
 },
 {        
   id : 5,
-  nombre : 'ESCALERA TELESCOPIC. FV',      
+  nombre : 'ESCALERA TELESCOPICA DE 28 PASOS DE FIBRA DE VIDRIO',      
   imagen:"/assets/imagenes/escalera-telescopicaFV.jpg",      
   precio: 30.00,
   tipoproducto: 'ESCALERAS',
@@ -162,7 +162,7 @@ export default function NavBar() {
 },
 {        
 id : 6,
-nombre : 'ESCALERA TELESCOPIC. AL',
+nombre : 'ESCALERA TELESCOPICA DE 16 PASOS DE ALUMINIO',
 imagen:"/assets/imagenes/escaleratelescopicaaluminio.png",
 precio: 30.00,
 tipoproducto: 'ESCALERAS',
@@ -173,7 +173,7 @@ unimed_id: 1
 },
 {        
 id : 7,
-nombre : 'ESCALERA EMBONABLE FV',
+nombre : 'ESCALERA MULTIFUNCION DE 12 PASOS DE FIBRA DE VIDRIO ',
 imagen:"/assets/imagenes/escaleraembonable.jpg",
 precio: 30.00,
 tipoproducto: 'ESCALERAS',
@@ -184,7 +184,7 @@ unimed_id: 1
 },
 {        
 id : 8,
-nombre : 'ESCALERA SIMPLE 4 PASOS',
+nombre : 'ESCALERA TIJERA DE 04 CON PLATAFORMA DE ALUMINIO',
 imagen:"/assets/imagenes/escalera-banqueta-aluminio.jpg",
 precio: 30.00,
 tipoproducto: 'ESCALERAS',
@@ -195,7 +195,7 @@ unimed_id: 1
 },
 {        
 id : 9,
-nombre : 'ESCALERA SIMPLE 3 PASOS',
+nombre : 'ESCALERA TIJERA DE 03 PASOS DE ACERO',
 imagen:"/assets/imagenes/escaleraacero3pasos.jpg",
 precio: 30.00,
 tipoproducto: 'ESCALERAS',
@@ -206,7 +206,7 @@ unimed_id: 1
 }, 
 {        
 id : 10,
-nombre : 'ANDAMIO ACROW',
+nombre : 'ANDAMIO MULTIDIRECCIONAL',
 imagen:"/assets/imagenes/Andamios-Multidireccionales.jpg",
 precio: 30.00,
 tipoproducto: 'ANDAMIOS',
@@ -217,7 +217,7 @@ unimed_id: 1
 }, 
 {        
 id : 11,
-nombre : 'ANDAMIO CONVENCIONAL',
+nombre : 'ANDAMIO CONVENCIONAL ARROW',
 imagen:"/assets/imagenes/Andamios-Convencional.jpg",
 precio: 30.00,
 tipoproducto: 'ANDAMIOS',
@@ -239,7 +239,7 @@ unimed_id: 1
 },
 {        
 id : 13,
-nombre : 'TROMPO METALICO',
+nombre : 'TROMPO MEZCLADOR',
 imagen:"/assets/imagenes/trompometalico.png",
 precio: 30.00,
 tipoproducto: 'SUMINISTROS CONSTRUCCION',

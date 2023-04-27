@@ -21,17 +21,15 @@ const imgTicTok = "/assets/imagenes/tictok.png"
         <MDBContainer className='text-md-start mt-5'>
           <MDBRow className='mt-3'>
            
-          <MDBCol md="2" lg="2" xl="4" className='mx-auto mb-md-0 mb-4'>
+          <MDBCol md="2" lg="2" xl="5" className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contacto</h6>
               
               <p>
               <img  className='imglogocontactodireccion me-4'  src= {imgDireccion}  alt=""/>                                                  
-                cl. San Fernando MzB Lt04 
+              Calle San Fernando Mz B Lt. 04 Surquillo
                 
               </p>
-              <p className='titulodistrito'>
-                          Surquillo
-              </p>
+              
               <p>
 
                 <img  className='imglogocontactotelefono me-4'  src= {imgTelefono}  alt=""/>                
