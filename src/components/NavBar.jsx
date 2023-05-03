@@ -184,7 +184,7 @@ unimed_id: 1
 },
 {        
 id : 8,
-nombre : 'ESCALERA TIJERA DE 04 CON PLATAFORMA DE ALUMINIO',
+nombre : 'ESCALERA TIJERA DE 04 PASOS CON PLATAFORMA DE ALUMINIO',
 imagen:"/assets/imagenes/escalera-banqueta-aluminio.jpg",
 precio: 30.00,
 tipoproducto: 'ESCALERAS',
